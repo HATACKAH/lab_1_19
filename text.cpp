@@ -1,20 +1,24 @@
 #include <iostream>
 #include <fstream>
-#include <string.h>
+
 using namespace std;
 
 int main() {
 int a;
 a=0;
-ifstream text;
-text.open("laba_1.txt");
+ifstream text; 
+ofstream withdrawal;
+text.open("input.txt");
+withdrawal.open("output.txt");
     string word;
     while (text >> word)
     {
        a=a+1;
     }
 
-    cout <<a<< endl;
+    withdrawal << a;
+    withdrawal.close();
     return 0;
+
 
 }
