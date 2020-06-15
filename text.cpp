@@ -5,12 +5,12 @@ using namespace std;
 
 int main() {
 
-ifstream inputStream;
-ifstream stream("laba_1.txt");
+ifstream text;
+text.open("laba_1.txt");
     
 
     string word;
-    while (inputStream >> word)
+    while (text >> word)
     {
        cout << word << ".";
     }
