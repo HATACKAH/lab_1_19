@@ -6,18 +6,18 @@ using namespace std;
 int main() {
 int a;
 a=0;
-ifstream text; 
-ofstream withdrawal;
-text.open("input.txt");
-withdrawal.open("output.txt");
+ifstream input; 
+ofstream output;
+input.open("input.txt");
+output.open("output.txt");
     string word;
-    while (text >> word)
+    while (input >> word)
     {
        a=a+1;
     }
 
-    withdrawal << a;
-    withdrawal.close();
+    output << a;
+    output.close();
     return 0;
 
 
